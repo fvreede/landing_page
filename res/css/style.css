@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-}
-
 body {
     font-family: Roboto, Arial, sans-serif;
 }
@@ -87,7 +82,7 @@ button {
 
 .random_info h1 {
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     color: #1F2937;
     text-align: center;
     margin-top: 50px;
@@ -125,25 +120,64 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-blockquote {
+.quote > p {
     font-size: 36px;
+    font-weight: light;
     font-style: italic;
-    font-weight: 100;
     width: 830px;
     margin: 0;
 }
 
-.author {
+.quote .author {
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 28px;
-    
+    text-align: right;
 }
 
 .call_to_action {
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_CtA {
+    background: #3882F6;
+    width: 1000px;
+    height: 140px;
+    color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.container_CtA h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.container_CtA h2,
+.container_CtA p {
+    width: 500px;
+}
+
+
+.btn_CtA {
+    margin-left: 40px;
+}
+
+.btn_CtA button {
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 section {
@@ -154,5 +188,9 @@ section {
 footer {
     height: 100px;
     background-color: #1F2937;
-
+    color: #E5E7EB;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
